@@ -1,9 +1,10 @@
 # hello-rebl
 
 Update deps.edn to match your local environment.
-Run clj :A:rebl:socket
-Using Atom editor and chlorine, connect socket repl (localhost:50505)
-and change something in hello_rebl.clj.
+
+Run `clj :A:rebl:socket`
+
+Using Atom editor and chlorine, connect socket repl (localhost:50505) and change something in hello_rebl.clj.
 
 This warning should pop up: 
 
