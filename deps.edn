@@ -1,0 +1,23 @@
+{:paths ["src"]
+ :deps {}
+ :aliases
+ {
+  :socket {:jvm-opts ["-Dclojure.server.repl={:port,50505,:accept,clojure.core.server/repl}"]}
+  :rebl
+  {:extra-deps
+         {org.clojure/clojure {:mvn/version "1.10.0"}
+          org.clojure/core.async {:mvn/version "0.4.490"}
+          ; org.clojure/data.csv {:mvn/version "0.1.4"}
+          ; org.clojure/data.json {:mvn/version "0.2.3"}
+          ; org.yaml/snakeyaml {:mvn/version "1.23"}
+          com.cognitect/rebl {:local/root "../../../REBL/REBL-0.9.218.jar"}
+          openjfx/javafx-base     {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.base.jar"}
+          org.openjfx/javafx-controls {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.controls.jar"}
+          org.openjfx/javafx-fxml     {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.fxml.jar"}
+          org.openjfx/javafx-graphics {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.graphics.jar"}
+          org.openjfx/javafx-media    {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.media.jar"}
+          org.openjfx/javafx-swt      {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx-swt.jar"}
+          org.openjfx/javafx-swing    {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.swing.jar"}
+          org.openjfx/javafx-web      {:local/root "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib/javafx.web.jar"}}
+       ;:jvm-opts ["--module-path" "/home/nmkip/Downloads/javafx-sdk-11.0.2/lib" "--add-modules=javafx.web,javafx.fxml,javafx.swt,javafx.swing,javafx.base,javafx.controls,javafx.media,javafx.graphics"]
+       :main-opts ["-m" "cognitect.rebl"]}}}
